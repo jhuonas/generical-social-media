@@ -1,0 +1,22 @@
+<section id="status-container">
+
+  <div class="form">
+    <form role="form" id="form-status">
+      <div class="form-group">
+        <input type="text" ng-model="description" placeholder="What are you thinking?" class="form-control">
+        <input class="btn btn-primary pull-right" value="Publish" ng-disabled="!description" ng-click="saveNewStatus()">
+      </div>
+    </form>
+  </div>
+
+  <div class="status">
+    <ul>
+      <li class="item" ng-repeat="i in status | orderBy:'-createdAt'">
+        <span>{{i.friend_name}}</span>
+        <span class="pull-right">{{i.createdAt | date:'medium'}}</span>
+        <br>
+        <p>{{i.text}}</p>
+      </li>
+    </ul>
+  </div>
+</section>
