@@ -26,8 +26,39 @@ a {
     background: #e2e2e2; }
     .main header .logo {
       margin: 0; }
+    .main header nav {
+      clear: both; }
+      .main header nav ul {
+        text-align: right; }
+        .main header nav ul li a {
+          display: inline-block;
+          margin-right: 10px;
+          padding: 10px 15px;
+          border-radius: 5px;
+          background: #f2f2f2; }
   .main #status-container {
-    /* FORM POST STATUS */ }
+    /* FORM POST STATUS */
+    padding-bottom: 80px;
+    /* STATUS LIST */ }
+    .main #status-container .form {
+      margin-bottom: 20px;
+      float: left;
+      width: 100%; }
+      .main #status-container .form .btn {
+        margin-top: 5px; }
+    .main #status-container .status {
+      clear: both; }
+      .main #status-container .status ul {
+        padding: 0; }
+        .main #status-container .status ul li.item {
+          margin-bottom: 20px;
+          padding: 20px;
+          border-radius: 5px;
+          background: #fff; }
+          .main #status-container .status ul li.item span {
+            font-size: 12px; }
+          .main #status-container .status ul li.item p {
+            margin-top: 10px; }
   .main .sidebar-container .sidebar {
     background: #fff;
     width: 100%;
@@ -41,6 +72,13 @@ a {
         margin-top: 0;
         font-size: 22px;
         font-weight: bold; }
+    .main .sidebar-container .sidebar ul {
+      padding: 0; }
+      .main .sidebar-container .sidebar ul li.item {
+        margin-bottom: 5px;
+        padding: 10px;
+        border-radius: 5px;
+        background: #f2f2f2; }
   .main footer {
     width: 100%;
     position: fixed;

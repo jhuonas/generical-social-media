@@ -12,12 +12,58 @@
     .logo {
       margin: 0;
     }
-
+    nav {
+      clear: both;
+      ul {
+        text-align: right;
+        li {
+          a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #f2f2f2;
+          }
+        }
+      }
+    }
   }
 
   #status-container {
     /* FORM POST STATUS */
+    padding-bottom: 80px;
 
+    .form {
+      margin-bottom: 20px;
+      float: left;
+      width: 100%;
+
+      .btn {
+        margin-top: 5px;
+      }
+    }
+
+    /* STATUS LIST */
+    .status {
+      clear: both;
+      ul {
+        padding: 0;
+
+        li.item {
+          margin-bottom: 20px;
+          padding: 20px;
+          border-radius: 5px;
+          background: #fff;
+
+          span {
+            font-size: 12px;
+          }
+          p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
   }
 
   /* FRIENDS LIST */
@@ -38,7 +84,16 @@
           font-weight: bold;
         }
       }
+      ul {
+        padding: 0;
 
+        li.item {
+          margin-bottom: 5px;
+          padding: 10px;
+          border-radius: 5px;
+          background: #f2f2f2;
+        }
+      }
     }
   }
 
