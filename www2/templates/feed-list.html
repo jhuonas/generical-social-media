@@ -1,0 +1,42 @@
+<section id="status-container">
+
+  <div class="form">
+    <form role="form" id="form-status">
+      <div class="form-group">
+        <input type="text" ng-model="description" placeholder="What are you thinking?" class="form-control">
+        <input class="btn btn-primary pull-right" value="Publish" ng-disabled="!description" ng-click="saveNewStatus()">
+      </div>
+    </form>
+  </div>
+
+  <div class="status">
+    <div class="text-center" ng-show="loading">
+      Carregando...
+    </div>
+
+    <ul>
+      <li class="item" ng-repeat="i in status | orderBy:'-createdAt'">
+        <span>{{i.friend_name}}</span>
+        <span class="pull-right">{{i.createdAt | date:'medium'}}</span>
+        <br>
+        <p>{{i.text}}</p>
+      </li>
+    </ul>
+
+    <nav class="text-right">
+      <ul class="pagination">
+        <li>
+          <a ng-click="changePage(pageNumber - 1)" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li ng-class="{'active': pageNumber == ($index + 1)}" ng-repeat="p in counter(pageLength) track by $index"><a ng-click="changePage($index + 1)">{{$index + 1}}</a></li>
+        <li>
+          <a ng-click="changePage(pageNumber + 1)" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>

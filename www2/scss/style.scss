@@ -1,0 +1,110 @@
+// compileNested: ../css/$1.css
+
+@import "_reset";
+
+.main {
+
+  header {
+    padding: 25px 0;
+    margin-bottom: 20px;
+    background: #e2e2e2;
+
+    .logo {
+      margin: 0;
+    }
+    nav {
+      clear: both;
+      ul {
+        text-align: right;
+        li {
+          a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #f2f2f2;
+          }
+        }
+      }
+    }
+  }
+
+  #status-container {
+    /* FORM POST STATUS */
+    padding-bottom: 80px;
+
+    .form {
+      margin-bottom: 20px;
+      float: left;
+      width: 100%;
+
+      .btn {
+        margin-top: 5px;
+      }
+    }
+
+    /* STATUS LIST */
+    .status {
+      clear: both;
+      ul {
+        padding: 0;
+
+        li.item {
+          margin-bottom: 20px;
+          padding: 20px;
+          border-radius: 5px;
+          background: #fff;
+
+          span {
+            font-size: 12px;
+          }
+          p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  /* FRIENDS LIST */
+  .sidebar-container {
+    .sidebar {
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      padding: 15px;
+
+      .title {
+        text-align: center;
+        margin-bottom: 10px;
+        h2 {
+          margin-top: 0;
+          font-size: 22px;
+          font-weight: bold;
+        }
+      }
+      ul {
+        padding: 0;
+
+        li.item {
+          margin-bottom: 5px;
+          padding: 10px;
+          border-radius: 5px;
+          background: #f2f2f2;
+        }
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 15px 0 5px 0;
+    background: #e2e2e2;
+    p {
+      font-size: 12px;
+    }
+  }
+}
