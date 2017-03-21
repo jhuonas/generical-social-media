@@ -10,7 +10,10 @@ Download or clone the source code:
 https://github.com/jhuonas/generical-social-media
 ```
 
-Run php server. Example:
+Set the virtual host pointing to the _www_ folder or start on any server.
+
+
+- PHP server Example:
 
 ```
 php -S localhost:8080
